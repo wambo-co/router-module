@@ -1,4 +1,6 @@
 # Nuxt Router Module
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nuxt-community/router-module.svg)](https://greenkeeper.io/)
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/router-module/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/router-module)
 [![npm](https://img.shields.io/npm/dt/@nuxtjs/router-module.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/router-module)
 [![CircleCI](https://img.shields.io/circleci/project/github/nuxt-community/router-module.svg?style=flat-square)](https://circleci.com/gh/nuxt-community/router-module)
