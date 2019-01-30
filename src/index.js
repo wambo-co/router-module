@@ -7,10 +7,13 @@ export default function (options) {
   }
   options = Object.assign({}, defaults, options)
 
-  const routerPath = resolve(this.options.srcDir, 'router.js')
+  let routerPath = resolve(this.options.srcDir, 'router.js')
+  if (!existsSync(routerPath)) {
+    routerPath = resolve(this.options.srcDir, 'router.ts')
+  }
 
   // Check if router.js is defined
-  if (!existsSync(routerPath)) throw new Error('[nuxt-router-module] Please create a router.js file in your source folder.')
+  if (!existsSync(routerPath)) throw new Error('[nuxt-router-module] Please create a router.js (or router.ts) file in your source folder.')
 
   if (options.keepDefaultRouter) {
     // Put default router as .nuxt/defaultRouter.js
